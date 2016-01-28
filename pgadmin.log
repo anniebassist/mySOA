@@ -1,0 +1,44 @@
+2015-10-14 11:27:46 ERROR  : ERROR:  syntax error at or near "ENABLE"
+LINE 6:    (    "ID" NUMBER(10,0) NOT NULL ENABLE,   
+                                           ^
+2015-10-14 11:28:04 ERROR  : ERROR:  syntax error at or near "CHAR"
+LINE 7:     "NAME" VARCHAR2(255 CHAR),   
+                                ^
+2015-10-14 11:28:11 ERROR  : ERROR:  syntax error at or near "CHAR"
+LINE 7:     "NAME" VARCHAR(255 CHAR),   
+                               ^
+2015-10-14 11:30:16 ERROR  : ERROR:  syntax error at or near "VARCHAR"
+LINE 6:    (    "ID",NUMBER,"NAME" VARCHAR(255),"SALARY" FLOAT(126),...
+                                   ^
+2015-10-14 11:32:34 ERROR  : ERROR:  precision for type float must be less than 54 bits
+LINE 6: ...  ("ID" NUMBER,"NAME" VARCHAR(255),"SALARY" FLOAT(126),PRIMA...
+                                                             ^
+2015-10-14 11:32:44 ERROR  : ERROR:  type "number" does not exist
+LINE 6:    ("ID" NUMBER,"NAME" VARCHAR(255),"SALARY" FLOAT(44),PRIMA...
+                 ^
+2015-10-14 12:32:24 ERROR  : ERROR:  relation "employee" does not exist
+LINE 1: select * from Employee
+                      ^
+2015-10-14 12:32:42 ERROR  : ERROR:  relation "employee" does not exist
+LINE 1: select * from employee
+                      ^
+2015-11-02 14:44:23 ERROR  : ERROR:  syntax error at or near "name"
+LINE 1: select * from employee orderby name
+                                       ^
+2016-01-19 14:43:18 ERROR  : ERROR:  syntax error at or near "User"
+LINE 1: insert into User (name, ssn, id) values ('rakhi', '122011', ...
+                    ^
+2016-01-19 14:44:11 ERROR  : ERROR:  syntax error at or near "user"
+LINE 1: insert into user (name, ssn, id) values ('rakhi', '122011', ...
+                    ^
+2016-01-19 14:54:00 ERROR  : ERROR:  syntax error at or near "to"
+LINE 1: grant all privileges to test
+                             ^
+2016-01-25 16:53:19 ERROR  : ERROR:  column "rabi" does not exist
+LINE 3:     VALUES (1, 23, "rabi");
+                           ^
+2016-01-27 12:26:45 ERROR  : ERROR:  could not create unique index "Pk_id"
+DETAIL:  Key (id)=(3) is duplicated.
+2016-01-27 12:28:53 ERROR  : ERROR:  relation "pk_id" already exists
+2016-01-27 12:29:13 ERROR  : ERROR:  relation "pk_id" already exists
+2016-01-27 12:29:22 ERROR  : ERROR:  relation "pk_id" already exists
